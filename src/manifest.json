@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Better Roam Research",
+    "version": "0.4",
+    "description": "Redesign Roam Research with a minimal UI.",
+    "homepage_url": "https://twitter.com/linuz90",
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "author": "Fabrizio Rinaldi",
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "browser_action": {
+        "default_title": "Quick Add",
+        "default_icon": "icons/icon-16.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.roamresearch.com/*"],
+            "css": ["css/main.css"],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": ["tabs", "*://*.roamresearch.com/#/*"]
+}
