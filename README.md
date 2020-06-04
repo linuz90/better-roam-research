@@ -1,12 +1,22 @@
-# Better Roam Research - Chrome Extension
+# Better Roam Research
 
-**[Official website](https://fabriziorinaldi.com/better-roam-research/)** • **[Install Chrome Extension](https://chrome.google.com/webstore/detail/better-roam-research/llpbmcfpmhoabpmijffppodjodbgkdfk)** • **[Twitter](https://twitter.com/linuz90)**
+This is a team for Roam Research. Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
 
-Chrome extension that applies a minimal interface style to [Roam Research](https://roamresearch.com/).
+Here's a preview:
 
 ![](/assets/preview.png)
 
 ## How to use
+
+You can follow [this guide](https://nesslabs.com/roam-research-themes-custom-styling-css) to use it inside Roam Research.
+
+-   Add a page named exactly `roam/css` inside Roam
+-   Add the theme as a bracketed link `[[Better Roam Research]]`
+-   Add the CSS as a `code block` inside it
+
+![](/assets/how-to.png)
+
+## How to edit and compile
 
 The working [SCSS](https://sass-lang.com/) file is [here](/main.scss).
 
