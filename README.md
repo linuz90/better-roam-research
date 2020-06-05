@@ -14,11 +14,11 @@ You can follow [this guide](https://nesslabs.com/roam-research-themes-custom-sty
 
 -   Add a page named exactly `roam/css` inside Roam
 -   Add the theme as a bracketed link `[[Better Roam Research]]`
--   Add the CSS as a `code block` inside it
+-   Add the [CSS code](/src/css/main.css) as a `code block` inside it
 
 ![](/assets/how-to.png)
 
-## How to edit and compile
+## Edit this theme
 
 The working [SCSS](https://sass-lang.com/) file is [here](/main.scss).
 
