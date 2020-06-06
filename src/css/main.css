@@ -45,9 +45,8 @@ body,
   box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.04) !important;
   overflow: visible !important;
   background: var(--body-background-color) !important;
-  margin-top: 10px;
-  margin-right: 16px;
-  margin-left: 16px; }
+  margin-right: 12px;
+  margin-left: 12px; }
   .roam-center > div:first-child {
     padding-right: calc(0.5 * (100% - 820px)) !important;
     padding-left: calc(0.5 * (100% - 820px)) !important; }
