@@ -2,10 +2,6 @@
 
 This is a team for Roam Research. Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
 
-Here's a preview:
-
-![](/assets/preview.png)
-
 # How to use
 
 1. Create a page named exactly `roam/css`
@@ -20,6 +16,16 @@ Here's a preview:
 The theme will change when I push updates in this repo ⚡️
 
 More extensive guide [here](https://nesslabs.com/roam-research-themes-custom-styling-css).
+
+# Preview
+
+Light:
+
+![](/assets/preview-light.png)
+
+When Dark Mode is enabled on your computer:
+
+![](/assets/preview-dark.png)
 
 # Editing this theme
 
