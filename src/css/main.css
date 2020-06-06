@@ -63,7 +63,7 @@ body,
 .roam-topbar,
 #right-sidebar,
 .roam-sidebar-container {
-  background: transparent !important; }
+  background: var(--main-background-color) !important; }
 
 #right-sidebar {
   border: none !important;
