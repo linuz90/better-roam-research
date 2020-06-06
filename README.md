@@ -4,14 +4,15 @@ This is a team for Roam Research. Got feedback? **[Say hi on Twitter](https://tw
 
 # How to use
 
-1. Create a page named exactly `roam/css`
+1. Inside Roam Research, create a page named exactly `roam/css`
 
-2. Paste this code inside it:
+2. Create a `[[Better Roam Research]]` bullet point.
 
-```
-  - [[Better Roam Research]]
-    - ```css @import url("https://linuz90.github.io/better-roam-research/src/css/main.css");```
-```
+3. Nest this code inside it: \```css @import url("https://linuz90.github.io/better-roam-research/src/css/main.css");```
+
+It should look like this:
+
+![](/assets/how-to.png)
 
 The theme will change when I push updates in this repo ⚡️
 
