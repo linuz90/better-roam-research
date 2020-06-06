@@ -1,24 +1,27 @@
 # Better Roam Research
 
-This is a **minimal theme** for Roam Research with **support for system-level Dark Mode**. 
-
-Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
+This is a team for Roam Research. Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
 
 Here's a preview:
 
 ![](/assets/preview.png)
 
-## How to use
+# How to use
 
-You can follow [this guide](https://nesslabs.com/roam-research-themes-custom-styling-css) to use it inside Roam Research.
+1. Create a page named exactly `roam/css`
 
--   Add a page named exactly `roam/css` inside Roam
--   Add the theme as a bracketed link `[[Better Roam Research]]`
--   Add the [CSS code](/src/css/main.css) as a `code block` inside it
+2. Paste this code inside it:
 
-![](/assets/how-to.png)
+```
+  - [[Better Roam Research]]
+    - ```css @import url("https://linuz90.github.io/better-roam-research/src/css/main.css");```
+```
 
-## Edit this theme
+The theme will change when I push updates in this repo ⚡️
+
+More extensive guide [here](https://nesslabs.com/roam-research-themes-custom-styling-css).
+
+# Editing this theme
 
 The working [SCSS](https://sass-lang.com/) file is [here](/main.scss).
 
