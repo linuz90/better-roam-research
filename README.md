@@ -1,6 +1,8 @@
 # Better Roam Research
 
-This is a team for Roam Research. Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
+This is a **minimal theme** for [Roam Research](https://roamresearch.com), with system-level **Dark Mode** support. [Preview below](#preview).
+
+Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
 
 # How to use
 
