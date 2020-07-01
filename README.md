@@ -38,4 +38,4 @@ The working [SCSS](https://sass-lang.com/) file is [here](/main.scss).
 
 Command to compile using SASS:
 
-`sass --sourcemap=none --no-cache --watch ./src/css/main.scss:./src/css/main.css`
+`sass --sourcemap=none --no-cache --watch ./main.scss:./src/css/main.css`
