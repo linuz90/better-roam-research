@@ -1,12 +1,50 @@
 :root {
     --font-size: 15.5px;
+    --font-color: hsl(205, 23%, 16%);
+    --font-color-lighter: hsl(0, 0%, 40%);
+    --font-color-placeholder: hsl(0, 0%, 70%);
+    --link-color: hsl(203, 82%, 35%);
     --border-color: rgba(0, 0, 0, 0.08);
     --subtle-border-color: rgba(0, 0, 0, 0.05);
     --main-background-color: hsl(210, 9%, 98%);
     --body-background-color: #ffffff;
+    --popup-background-color: #ffffff;
     --reference-item-background: hsl(0, 0%, 99%);
     --brackets-color: rgba(0, 0, 0, 0.25);
     --empty-text-color: hsl(203, 12%, 75%);
+}
+
+body,
+.roam-body,
+.roam-app,
+.rm-pages-title-text,
+.bp3-button {
+    color: var(--font-color) !important;
+}
+
+h1 {
+    color: var(--font-color) !important;
+}
+
+.rm-page-ref-link-color {
+    color: var(--link-color) !important;
+}
+
+.rm-page-ref-brackets {
+    color: var(--brackets-color) !important;
+}
+
+.bp3-input {
+    background: var(--body-background-color) !important;
+    &::placeholder {
+        color: var(--font-color-placeholder) !important;
+    }
+}
+
+.bp3-elevation-3,
+.confirmation-content-dialog,
+.bp3-dialog {
+    background: var(--popup-background-color) !important;
 }
 
 .rm-title-untitled,
@@ -15,12 +53,16 @@ textarea::placeholder {
     color: var(--empty-text-color) !important;
 }
 
+.rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+    background: var(--main-background-color) !important;
+}
+
 body,
 div,
 textarea,
 .level2 {
-    font-family: 'Quattro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
 iframe {
@@ -55,10 +97,6 @@ body,
     background: var(--body-background-color) !important;
     margin-right: 12px;
     margin-left: 12px;
-    > div:first-child {
-        padding-right: calc(0.5 * (100% - 820px)) !important;
-        padding-left: calc(0.5 * (100% - 820px)) !important;
-    }
 }
 
 // .roam-article {
@@ -160,7 +198,7 @@ span.checkmark {
 
 .rm-reference-item {
     background: var(--reference-item-background) !important;
-    border: 1px solid hsl(0, 0%, 94%) !important;
+    border: 1px solid var(--subtle-border-color) !important;
     border-radius: 6px !important;
     padding: 8px 10px 8px 2px !important;
     .rm-block-text {
@@ -180,8 +218,8 @@ span.checkmark {
     .starred-pages-wrapper
     .starred-pages
     .page:hover {
-    color: inherit !important;
     background-color: transparent !important;
+    color: var(--font-color) !important;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
@@ -194,7 +232,7 @@ span.checkmark {
     .starred-pages
     .page,
 .bp3-minimal > div {
-    color: hsl(0, 0%, 40%) !important;
+    color: var(--font-color-lighter) !important;
     font-size: 13px !important;
 }
 
@@ -205,6 +243,13 @@ span.checkmark {
     }
     > div:first-child {
         padding-bottom: 18px !important;
+    }
+    div {
+        line-height: 1.2 !important;
+    }
+    .rm-db-title {
+        margin-top: 0 !important;
+        color: var(--font-color-lighter) !important;
     }
 }
 
@@ -282,7 +327,7 @@ strong {
         background: hsl(113, 0%, 9%) !important;
     }
     #app {
-        filter: invert(1) hue-rotate(180deg) !important;
+        // filter: invert(1) hue-rotate(180deg) !important;
     }
     img,
     div#buffer,
@@ -292,21 +337,26 @@ strong {
     .bp3-dialog,
     .twitter-tweet,
     iframe {
-        filter: invert(1) hue-rotate(180deg) !important;
+        // filter: invert(1) hue-rotate(180deg) !important;
     }
     .roam-highlight {
-        background-color: #e2cb47 !important;
+        background-color: hsl(51, 50%, 18%) !important;
     }
     .bp3-overlay-backdrop {
-        background-color: rgba(255, 255, 255, 0.7) !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
     }
     :root {
-        --border-color: rgba(0, 0, 0, 0.07) !important;
-        --subtle-border-color: rgba(0, 0, 0, 0.05) !important;
-        --main-background-color: hsl(0, 0%, 96%) !important;
-        --body-background-color: hsl(0, 0%, 90%) !important;
-        --reference-item-background: hsl(0, 0%, 93%) !important;
-        --brackets-color: rgba(0, 0, 0, 0.3) !important;
+        --font-color: hsl(205, 0%, 98%);
+        --font-color-lighter: hsl(0, 0%, 50%);
+        --font-color-placeholder: hsl(0, 0%, 36%);
+        --link-color: hsl(203, 62%, 55%);
+        --border-color: rgba(255, 255, 255, 0.07);
+        --subtle-border-color: rgba(255, 255, 255, 0.05);
+        --main-background-color: hsl(0, 0%, 4%);
+        --body-background-color: hsl(0, 0%, 10%);
+        --popup-background-color: hsl(0, 0%, 14%);
+        --reference-item-background: hsl(0, 0%, 8%);
+        --brackets-color: rgba(255, 255, 255, 0.3);
         --empty-text-color: hsl(203, 5%, 70%);
     }
 }
