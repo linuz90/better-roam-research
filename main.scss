@@ -4,6 +4,7 @@
     --font-color-lighter: hsl(0, 0%, 40%);
     --font-color-placeholder: hsl(0, 0%, 70%);
     --link-color: hsl(203, 82%, 35%);
+    --selection-color: hsl(203, 100%, 74%);
     --border-color: rgba(0, 0, 0, 0.08);
     --subtle-border-color: rgba(0, 0, 0, 0.05);
     --main-background-color: hsl(210, 9%, 98%);
@@ -26,6 +27,11 @@ h1 {
     color: var(--font-color) !important;
 }
 
+// Selection
+.block-highlight-blue {
+    background-color: var(--selection-color) !important;
+}
+
 .rm-page-ref-link-color {
     color: var(--link-color) !important;
 }
@@ -35,6 +41,7 @@ h1 {
 }
 
 .bp3-input {
+    color: var(--font-color) !important;
     background: var(--body-background-color) !important;
     &::placeholder {
         color: var(--font-color-placeholder) !important;
@@ -206,6 +213,19 @@ span.checkmark {
     }
 }
 
+.rm-reference-container {
+    .bp3-button {
+        color: #182026 !important;
+    }
+    .bp3-popover-content .flex-h-box div > div > span {
+        color: #202b33 !important;
+    }
+}
+
+.rm-embed-container {
+    background-color: #21282c !important;
+}
+
 .CodeMirror {
     font-size: 13px !important;
 }
@@ -265,15 +285,20 @@ span.checkmark {
     }
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
-.roam-body
-    .roam-app
-    .roam-sidebar-container
-    .roam-sidebar-content
-    .starred-pages-wrapper
-    .starred-pages
-    .page {
-    padding: 6px 24px 6px !important;
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content {
+    .log-button,
+    .starred-pages-wrapper .starred-pages .page {
+        padding: 6px 24px 6px !important;
+    }
+    .shortcut {
+        padding: 14px 24px 0;
+    }
+    .top-row {
+        padding: 12px 0 0 20px;
+        &:hover {
+            background-color: inherit;
+        }
+    }
 }
 .bp3-icon-small {
     padding-left: 24px !important;
@@ -350,6 +375,7 @@ strong {
         --font-color-lighter: hsl(0, 0%, 50%);
         --font-color-placeholder: hsl(0, 0%, 36%);
         --link-color: hsl(203, 62%, 55%);
+        --selection-color: hsl(203, 56%, 40%);
         --border-color: rgba(255, 255, 255, 0.07);
         --subtle-border-color: rgba(255, 255, 255, 0.05);
         --main-background-color: hsl(0, 0%, 4%);
