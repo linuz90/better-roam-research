@@ -1,10 +1,12 @@
 # Better Roam Research
 
-This is a **minimal theme** for [Roam Research](https://roamresearch.com), with system-level **Dark Mode** support. [Preview below](#preview).
+This is one of the most popular **minimal themes** for [Roam Research](https://roamresearch.com), with system-level **Dark Mode** support.
 
-Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
+👀 How does it look? **[See the preview below](#preview).**
 
-Want to contribute? [Edit the theme](#editing-this-theme).
+💬 Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
+
+🔥 Want to contribute? **[Edit the theme](#editing-this-theme).**
 
 # How to use
 
