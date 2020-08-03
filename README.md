@@ -4,13 +4,17 @@ This is a **minimal theme** for [Roam Research](https://roamresearch.com), with 
 
 Got feedback? **[Say hi on Twitter](https://twitter.com/linuz90).**
 
+Want to contribute? [Edit the theme](#editing-this-theme).
+
 # How to use
 
 1. Inside Roam Research, create a page named exactly `roam/css`
 
 2. Create a `[[Better Roam Research]]` bullet point.
 
-3. Nest this code inside it: \```css @import url("https://linuz90.github.io/better-roam-research/src/css/main.css");```
+3. Nest this code inside it: \```css @import url("https://linuz90.github.io/better-roam-research/main.css");```
+
+(the old link `https://linuz90.github.io/better-roam-research/src/css/main.css` still works but it's deprecated, I won't update it anymore — it reflected an old folder structure in this repo)
 
 It should look like this:
 
@@ -32,10 +36,10 @@ When Dark Mode is enabled on your computer:
 
 # Editing this theme
 
-The working [SCSS](https://sass-lang.com/) file is [here](/main.scss).
+To create this theme I'm using the **SCSS** syntax. This file is compiled into a regular **CSS** file used for the theme.
 
-**The compiled CSS** file is [here](/src/css/main.css). This CSS can be used with [Stylus](https://chrome.google.com/webstore/detail/stylus-beta/apmmpaebfobifelkijhaljbmpcgbjbdo?hl=en).
+To edit the theme, install [Ruby Sass](https://github.com/sass/ruby-sass) (it's not maintained anymore, will use something else in the future).
 
-Command to compile using SASS:
+Then compile the SASS using this command:
 
-`sass --sourcemap=none --no-cache --watch ./main.scss:./src/css/main.css`
+`sass --sourcemap=none --no-cache --watch ./main.scss:./main.css`
