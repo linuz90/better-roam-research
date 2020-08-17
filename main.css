@@ -255,7 +255,8 @@ strong {
   body {
     background: #171717 !important; }
 
-  .roam-highlight {
+  .roam-highlight,
+  .block-highlight-yellow {
     background-color: #453e17 !important; }
 
   .bp3-overlay-backdrop {

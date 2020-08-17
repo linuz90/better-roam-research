@@ -364,7 +364,8 @@ strong {
     iframe {
         // filter: invert(1) hue-rotate(180deg) !important;
     }
-    .roam-highlight {
+    .roam-highlight,
+    .block-highlight-yellow {
         background-color: hsl(51, 50%, 18%) !important;
     }
     .bp3-overlay-backdrop {
