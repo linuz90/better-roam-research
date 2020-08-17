@@ -5,7 +5,7 @@
     --font-color-placeholder: hsl(0, 0%, 70%);
     --link-color: hsl(203, 82%, 35%);
     --selection-color: hsl(203, 100%, 74%);
-    --border-color: rgba(0, 0, 0, 0.08);
+    --border-color: rgba(0, 0, 0, 0.06);
     --subtle-border-color: rgba(0, 0, 0, 0.05);
     --main-background-color: hsl(210, 9%, 98%);
     --body-background-color: #ffffff;
@@ -98,8 +98,8 @@ body,
     border-left: 1px solid var(--border-color) !important;
     border-top: 1px solid var(--border-color) !important;
     border-right: 1px solid var(--border-color) !important;
-    border-radius: 6px;
-    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.04) !important;
+    border-radius: 8px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
     overflow: visible !important;
     background: var(--body-background-color) !important;
     margin-right: 12px;
