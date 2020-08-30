@@ -5,8 +5,9 @@
   --font-color-placeholder: hsl(0, 0%, 70%);
   --link-color: hsl(203, 82%, 35%);
   --selection-color: hsl(203, 100%, 74%);
-  --border-color: rgba(0, 0, 0, 0.06);
-  --subtle-border-color: rgba(0, 0, 0, 0.05);
+  --ref-hover-bg-color: hsl(204, 33%, 97%);
+  --border-color: rgba(0, 0, 0, 0.12);
+  --subtle-border-color: rgba(0, 0, 0, 0.07);
   --main-background-color: hsl(210, 9%, 98%);
   --body-background-color: #ffffff;
   --popup-background-color: #ffffff;
@@ -77,9 +78,9 @@ body,
   background: var(--main-background-color) !important; }
 
 .roam-center {
-  border-left: 1px solid var(--border-color) !important;
-  border-top: 1px solid var(--border-color) !important;
-  border-right: 1px solid var(--border-color) !important;
+  border-left: 1px solid var(--subtle-border-color) !important;
+  border-top: 1px solid var(--subtle-border-color) !important;
+  border-right: 1px solid var(--subtle-border-color) !important;
   border-radius: 8px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
   overflow: visible !important;
@@ -121,20 +122,35 @@ body,
 span.checkmark {
   top: -2px; }
 
-.rm-level1 div,
-.rm-level1 textarea {
-  font-size: 22px !important;
-  line-height: 1.5 !important; }
+.rm-title-display,
+.rm-title-textarea {
+  height: auto !important;
+  line-height: 1.5 !important;
+  font-size: 26px !important;
+  font-weight: 700 !important; }
 
-.rm-level2 div,
-.rm-level2 textarea {
-  font-size: 20px !important;
-  line-height: 1.5 !important; }
+.rm-level1 {
+  margin-top: -4px !important; }
+  .rm-level1 div,
+  .rm-level1 textarea {
+    font-size: 22px !important;
+    line-height: 1.5 !important;
+    font-weight: 700 !important; }
 
-.rm-level3 div,
-.rm-level3 textarea {
-  font-size: 18px !important;
-  line-height: 1.5 !important; }
+.rm-level2 {
+  margin-top: -3px !important; }
+  .rm-level2 div,
+  .rm-level2 textarea {
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important; }
+
+.rm-level3 {
+  margin-top: -2px !important; }
+  .rm-level3 div,
+  .rm-level3 textarea {
+    font-size: 18px !important;
+    line-height: 1.5 !important; }
 
 .level2 {
   font-weight: inherit !important; }
@@ -160,6 +176,11 @@ span.checkmark {
 
 .rm-embed-container {
   background-color: #21282c !important; }
+
+.rm-block-ref {
+  border-bottom: 0.5px solid var(--border-color) !important; }
+  .rm-block-ref:hover {
+    background: var(--ref-hover-bg-color) !important; }
 
 .CodeMirror {
   font-size: 13px !important; }
@@ -227,23 +248,8 @@ span.checkmark {
 .block-bullet-view {
   margin-bottom: 3px !important; }
 
-.roam-article > div > div h1 {
-  font-size: 26px !important;
-  font-weight: 700 !important;
-  height: auto !important;
-  line-height: 1.5 !important; }
-
-.rm-title-display,
-.rm-title-textarea {
-  height: auto !important;
-  line-height: 1.5 !important; }
-
-.roam-log-container .roam-log-preview h1 {
-  font-size: 22px !important;
-  font-weight: 700 !important; }
-
-strong {
-  font-weight: 700 !important; }
+.controls .simple-bullet-outer {
+  margin-top: 4px !important; }
 
 .block-border-left {
   border-left-color: var(--subtle-border-color) !important; }
@@ -267,12 +273,13 @@ strong {
     --font-color-lighter: hsl(0, 0%, 50%);
     --font-color-placeholder: hsl(0, 0%, 36%);
     --link-color: hsl(203, 62%, 55%);
-    --selection-color: hsl(203, 56%, 40%);
-    --border-color: rgba(255, 255, 255, 0.07);
-    --subtle-border-color: rgba(255, 255, 255, 0.05);
+    --selection-color: hsl(203, 56%, 36%);
+    --reference-item-background: hsl(0, 0%, 8%);
+    --ref-hover-bg-color: hsl(204, 20%, 17%);
+    --border-color: rgba(255, 255, 255, 0.25);
+    --subtle-border-color: rgba(255, 255, 255, 0.07);
     --main-background-color: hsl(0, 0%, 4%);
     --body-background-color: hsl(0, 0%, 10%);
     --popup-background-color: hsl(0, 0%, 14%);
-    --reference-item-background: hsl(0, 0%, 8%);
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%); } }
