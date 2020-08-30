@@ -16,17 +16,15 @@ If you’re a screenwriter, try my new [Roam Screenwriter](https://github.com/li
 
 2. Create a `[[Better Roam Research]]` bullet point.
 
-3. Nest this code inside it: \```css @import url("https://linuz90.github.io/better-roam-research/main.css");```
+3. Create a child **code block** inside it (you can write three backticks to create it: ```) and change it to **css**
 
-(the old link `https://linuz90.github.io/better-roam-research/src/css/main.css` still works but it's deprecated, I won't update it anymore — it reflected an old folder structure in this repo)
+4. Paste this in the code block `@import url("https://linuz90.github.io/better-roam-research/src/css/main.css");`
 
-It should look like this:
+It will look like this:
 
 ![](/assets/how-to.png)
 
 The theme will change when I push updates in this repo ⚡️
-
-More extensive guide [here](https://nesslabs.com/roam-research-themes-custom-styling-css).
 
 # Preview
 
