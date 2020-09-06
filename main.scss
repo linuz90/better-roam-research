@@ -8,12 +8,17 @@
   --ref-hover-bg-color: hsl(204, 33%, 97%);
   --border-color: rgba(0, 0, 0, 0.12);
   --subtle-border-color: rgba(0, 0, 0, 0.07);
-  --main-background-color: hsl(210, 9%, 98%);
-  --body-background-color: #ffffff;
+  --search-border-color: rgba(0, 0, 0, 0.07);
+  --page-background-color: hsl(210, 9%, 98%);
+  --main-area-background-color: #ffffff;
   --popup-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
   --brackets-color: rgba(0, 0, 0, 0.25);
   --empty-text-color: hsl(203, 12%, 75%);
+}
+
+body {
+  background: var(--page-background-color) !important;
 }
 
 body,
@@ -43,7 +48,7 @@ h1 {
 
 .bp3-input {
   color: var(--font-color) !important;
-  background: var(--body-background-color) !important;
+  background: var(--main-area-background-color) !important;
   &::placeholder {
     color: var(--font-color-placeholder) !important;
   }
@@ -62,7 +67,7 @@ textarea::placeholder {
 }
 
 .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
-  background: var(--main-background-color) !important;
+  background: var(--page-background-color) !important;
 }
 
 body,
@@ -92,17 +97,17 @@ iframe {
 
 body,
 #app {
-  background: var(--main-background-color) !important;
+  background: var(--page-background-color) !important;
 }
 
 .roam-center {
   border-left: 1px solid var(--subtle-border-color) !important;
   border-top: 1px solid var(--subtle-border-color) !important;
   border-right: 1px solid var(--subtle-border-color) !important;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
   overflow: visible !important;
-  background: var(--body-background-color) !important;
+  background: var(--main-area-background-color) !important;
   margin-right: 12px;
   margin-left: 12px;
 }
@@ -118,11 +123,11 @@ body,
 }
 
 .roam-topbar {
-  background: var(--main-background-color) !important;
+  background: var(--page-background-color) !important;
   border-bottom: none !important;
   input#find-or-create-input {
     box-shadow: none !important;
-    border: 1px solid var(--border-color) !important;
+    border: 1px solid var(--search-border-color) !important;
   }
 }
 
@@ -130,7 +135,8 @@ body,
 .roam-topbar,
 #right-sidebar,
 .roam-sidebar-container {
-  background: var(--main-background-color) !important;
+  background: var(--page-background-color) !important;
+  box-shadow: none !important;
 }
 
 #right-sidebar {
@@ -222,12 +228,16 @@ span.checkmark {
   }
 }
 
-.rm-reference-container {
-  .bp3-button {
+// Overrides to dark theme text, for popovers that remain white
+.bp3-button {
+  color: #182026 !important;
+}
+.bp3-popover-content {
+  div > div > .flex-h-box div > div > span,
+  div > div > .flex-h-box div > div > strong,
+  div > div > div > button,
+  > ul > div {
     color: #182026 !important;
-  }
-  .bp3-popover-content .flex-h-box div > div > span {
-    color: #202b33 !important;
   }
 }
 
@@ -352,11 +362,22 @@ span.checkmark {
 // Dark Mode
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background: hsl(113, 0%, 9%) !important;
-  }
-  #app {
-    // filter: invert(1) hue-rotate(180deg) !important;
+  :root {
+    --font-color: hsl(205, 0%, 98%);
+    --font-color-lighter: hsl(0, 0%, 50%);
+    --font-color-placeholder: hsl(0, 0%, 36%);
+    --link-color: hsl(203, 62%, 55%);
+    --selection-color: hsl(203, 56%, 36%);
+    --reference-item-background: hsl(0, 0%, 8%);
+    --ref-hover-bg-color: hsl(204, 20%, 17%);
+    --border-color: rgba(255, 255, 255, 0.25);
+    --subtle-border-color: rgba(255, 255, 255, 0.07);
+    --search-border-color: rgba(255, 255, 255, 0.06);
+    --page-background-color: hsl(0, 0%, 8%);
+    --main-area-background-color: hsl(0, 0%, 12%);
+    --popup-background-color: hsl(0, 0%, 14%);
+    --brackets-color: rgba(255, 255, 255, 0.3);
+    --empty-text-color: hsl(203, 5%, 70%);
   }
   img,
   div#buffer,
@@ -370,25 +391,9 @@ span.checkmark {
   }
   .roam-highlight,
   .block-highlight-yellow {
-    background-color: hsl(51, 50%, 18%) !important;
+    background-color: hsl(51, 60%, 22%) !important;
   }
   .bp3-overlay-backdrop {
     background-color: rgba(0, 0, 0, 0.7) !important;
-  }
-  :root {
-    --font-color: hsl(205, 0%, 98%);
-    --font-color-lighter: hsl(0, 0%, 50%);
-    --font-color-placeholder: hsl(0, 0%, 36%);
-    --link-color: hsl(203, 62%, 55%);
-    --selection-color: hsl(203, 56%, 36%);
-    --reference-item-background: hsl(0, 0%, 8%);
-    --ref-hover-bg-color: hsl(204, 20%, 17%);
-    --border-color: rgba(255, 255, 255, 0.25);
-    --subtle-border-color: rgba(255, 255, 255, 0.07);
-    --main-background-color: hsl(0, 0%, 4%);
-    --body-background-color: hsl(0, 0%, 10%);
-    --popup-background-color: hsl(0, 0%, 14%);
-    --brackets-color: rgba(255, 255, 255, 0.3);
-    --empty-text-color: hsl(203, 5%, 70%);
   }
 }

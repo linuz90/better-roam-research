@@ -8,12 +8,16 @@
   --ref-hover-bg-color: hsl(204, 33%, 97%);
   --border-color: rgba(0, 0, 0, 0.12);
   --subtle-border-color: rgba(0, 0, 0, 0.07);
-  --main-background-color: hsl(210, 9%, 98%);
-  --body-background-color: #ffffff;
+  --search-border-color: rgba(0, 0, 0, 0.07);
+  --page-background-color: hsl(210, 9%, 98%);
+  --main-area-background-color: #ffffff;
   --popup-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
   --brackets-color: rgba(0, 0, 0, 0.25);
   --empty-text-color: hsl(203, 12%, 75%); }
+
+body {
+  background: var(--page-background-color) !important; }
 
 body,
 .roam-body,
@@ -36,7 +40,7 @@ h1 {
 
 .bp3-input {
   color: var(--font-color) !important;
-  background: var(--body-background-color) !important; }
+  background: var(--main-area-background-color) !important; }
   .bp3-input::placeholder {
     color: var(--font-color-placeholder) !important; }
 
@@ -51,7 +55,7 @@ textarea::placeholder {
   color: var(--empty-text-color) !important; }
 
 .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
-  background: var(--main-background-color) !important; }
+  background: var(--page-background-color) !important; }
 
 body,
 div,
@@ -75,16 +79,16 @@ iframe {
 
 body,
 #app {
-  background: var(--main-background-color) !important; }
+  background: var(--page-background-color) !important; }
 
 .roam-center {
   border-left: 1px solid var(--subtle-border-color) !important;
   border-top: 1px solid var(--subtle-border-color) !important;
   border-right: 1px solid var(--subtle-border-color) !important;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
   overflow: visible !important;
-  background: var(--body-background-color) !important;
+  background: var(--main-area-background-color) !important;
   margin-right: 12px;
   margin-left: 12px; }
 
@@ -98,17 +102,18 @@ body,
       padding: 10px 20px 120px !important; } }
 
 .roam-topbar {
-  background: var(--main-background-color) !important;
+  background: var(--page-background-color) !important;
   border-bottom: none !important; }
   .roam-topbar input#find-or-create-input {
     box-shadow: none !important;
-    border: 1px solid var(--border-color) !important; }
+    border: 1px solid var(--search-border-color) !important; }
 
 .roam-body,
 .roam-topbar,
 #right-sidebar,
 .roam-sidebar-container {
-  background: var(--main-background-color) !important; }
+  background: var(--page-background-color) !important;
+  box-shadow: none !important; }
 
 #right-sidebar {
   border: none !important;
@@ -180,10 +185,14 @@ span.checkmark {
   .rm-reference-item .rm-block-text {
     font-size: var(--font-size) !important; }
 
-.rm-reference-container .bp3-button {
+.bp3-button {
   color: #182026 !important; }
-.rm-reference-container .bp3-popover-content .flex-h-box div > div > span {
-  color: #202b33 !important; }
+
+.bp3-popover-content div > div > .flex-h-box div > div > span,
+.bp3-popover-content div > div > .flex-h-box div > div > strong,
+.bp3-popover-content div > div > div > button,
+.bp3-popover-content > ul > div {
+  color: #182026 !important; }
 
 .rm-embed-container {
   background-color: #21282c !important; }
@@ -269,16 +278,6 @@ span.checkmark {
   color: gray !important; }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background: #171717 !important; }
-
-  .roam-highlight,
-  .block-highlight-yellow {
-    background-color: #453e17 !important; }
-
-  .bp3-overlay-backdrop {
-    background-color: rgba(0, 0, 0, 0.7) !important; }
-
   :root {
     --font-color: hsl(205, 0%, 98%);
     --font-color-lighter: hsl(0, 0%, 50%);
@@ -289,8 +288,16 @@ span.checkmark {
     --ref-hover-bg-color: hsl(204, 20%, 17%);
     --border-color: rgba(255, 255, 255, 0.25);
     --subtle-border-color: rgba(255, 255, 255, 0.07);
-    --main-background-color: hsl(0, 0%, 4%);
-    --body-background-color: hsl(0, 0%, 10%);
+    --search-border-color: rgba(255, 255, 255, 0.06);
+    --page-background-color: hsl(0, 0%, 8%);
+    --main-area-background-color: hsl(0, 0%, 12%);
     --popup-background-color: hsl(0, 0%, 14%);
     --brackets-color: rgba(255, 255, 255, 0.3);
-    --empty-text-color: hsl(203, 5%, 70%); } }
+    --empty-text-color: hsl(203, 5%, 70%); }
+
+  .roam-highlight,
+  .block-highlight-yellow {
+    background-color: #5a5016 !important; }
+
+  .bp3-overlay-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important; } }
