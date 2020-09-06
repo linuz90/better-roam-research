@@ -129,16 +129,6 @@ body,
   border: 1px solid var(--border-color) !important;
 }
 
-@media (hover: hover) {
-  .roam-topbar {
-    opacity: 0 !important;
-    transition: opacity 1.5s ease-in-out 5s !important;
-  }
-  .roam-topbar:hover {
-    opacity: 1 !important;
-    transition: opacity 0.2s ease-in-out 0s !important;
-  }
-}
 .roam-body,
 .roam-topbar,
 #right-sidebar,
