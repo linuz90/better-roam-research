@@ -375,10 +375,6 @@ span.checkmark {
   }
 }
 
-// strong {
-//   font-weight: 700 !important;
-// }
-
 .block-border-left {
   border-left-color: var(--subtle-border-color) !important;
 }
@@ -389,8 +385,19 @@ span.checkmark {
   }
 }
 
-// Dark Mode
+/* Credits */
+.roam-topbar > div > div:last-child ul.bp3-menu:after {
+  content: "Better Roam Research theme by @linuz90";
+  width: 160px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 7px;
+  opacity: 0.6;
+  color: var(--font-color-lighter);
+}
 
+// Dark Mode
 @media (prefers-color-scheme: dark) {
   :root {
     --font-color: hsl(205, 0%, 98%);
