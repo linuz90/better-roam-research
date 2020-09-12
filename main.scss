@@ -41,6 +41,10 @@ body,
   background: var(--main-area-background-color) !important;
   margin-right: 12px;
   margin-left: 12px;
+  @media (max-width: 640px) {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
 }
 
 .roam-center .roam-article {
@@ -383,6 +387,16 @@ span.checkmark {
 .rm-reference-main {
   div > strong {
     color: hsl(0, 0%, 50%) !important;
+  }
+}
+
+// Mobile bar
+
+#rm-mobile-bar {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 50px;
+  &[style*="bottom: 0px"] {
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 

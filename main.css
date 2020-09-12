@@ -38,6 +38,10 @@ body,
   background: var(--main-area-background-color) !important;
   margin-right: 12px;
   margin-left: 12px; }
+  @media (max-width: 640px) {
+    .roam-center {
+      margin-right: 6px;
+      margin-left: 6px; } }
 
 .roam-center .roam-article {
   padding: 16px 36px 120px !important; }
@@ -209,7 +213,7 @@ span.checkmark {
     font-size: var(--font-size) !important; }
 
 .bp3-button {
-  color: #182026 !important; }
+  color: var(--font-color-lighter) !important; }
 
 .bp3-popover-content div > div > .flex-h-box div > div > span,
 .bp3-popover-content div > div > .flex-h-box div > div > strong,
@@ -299,6 +303,12 @@ span.checkmark {
 
 .rm-reference-main div > strong {
   color: gray !important; }
+
+#rm-mobile-bar {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 50px; }
+  #rm-mobile-bar[style*="bottom: 0px"] {
+    padding-bottom: env(safe-area-inset-bottom); }
 
 /* Credits */
 .roam-topbar > div > div:last-child ul.bp3-menu:after {
