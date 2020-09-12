@@ -258,10 +258,11 @@ span.checkmark {
   }
 }
 
-// Overrides to dark theme text, for popovers that remain white
 .bp3-button {
-  color: #182026 !important;
+  color: var(--font-color-lighter) !important;
 }
+
+// Overrides to dark theme text, for popovers that remain white
 .bp3-popover-content {
   div > div > .flex-h-box div > div > span,
   div > div > .flex-h-box div > div > strong,
