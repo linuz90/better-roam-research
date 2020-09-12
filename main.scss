@@ -393,10 +393,10 @@ span.checkmark {
 // Mobile bar
 
 #rm-mobile-bar {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 50px;
+  background-color: var(--main-area-background-color) !important;
   &[style*="bottom: 0px"] {
     padding-bottom: env(safe-area-inset-bottom);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 15px, rgba(0, 0, 0, 0.1) 0px 0px 50px !important;
   }
 }
 
