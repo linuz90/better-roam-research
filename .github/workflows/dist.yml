@@ -1,0 +1,47 @@
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: master
+            fetch-depth: 1
+
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp /tmp/repo-name/assets/css
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.2.6
+        with:
+          source: src/main.scss
+          destination: /tmp/repo-name/assets/css/main.css
+
+      - name: Checkout destination Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: dist
+            fetch-depth: 1
+
+      - name: Move compiled CSS to path within pr-pages branch
+        run: cp -rf /tmp/repo-name/assets/css assets/
+
+      - name: Add and Commit changes to pr-pages branch
+        run: |
+          git config --local user.email 'action@github.com'
+          git config --local user.name 'GitHub Action'
+          git add assets/css/*
+          git commit -m 'Updates compiled CSS files'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dist
