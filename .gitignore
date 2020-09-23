@@ -33,3 +33,6 @@ node_modules/
 GumGumScreenshots_*.crx
 updates.xml
 .sass_cache
+
+*.css
+tags
