@@ -165,6 +165,9 @@ div.roam-article .rm-level3 span > a:not(.rm-alias-page):after {
 .bp3-dialog {
   background: var(--popup-background-color) !important; }
 
+.bp3-elevation-3 div.dont-unfocus-block[style*="background"] {
+  background: var(--secondary-background-color) !important; }
+
 .rm-title-untitled,
 #block-input-ghost > span,
 textarea::placeholder {
@@ -243,6 +246,9 @@ span.checkmark {
 .bp3-popover-content div > div > .flex-h-box div > div > strong,
 .bp3-popover-content div > div > div > button,
 .bp3-popover-content > ul > div {
+  color: #182026 !important; }
+
+.DayPicker {
   color: #182026 !important; }
 
 .rm-block-ref {
@@ -357,7 +363,7 @@ span.checkmark {
     --page-background-color: hsl(0, 0%, 8%);
     --main-area-background-color: hsl(0, 0%, 12%);
     --secondary-background-color: hsl(0, 0%, 18%);
-    --popup-background-color: hsl(0, 0%, 14%);
+    --popup-background-color: hsl(0, 0%, 4%);
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%); }
 

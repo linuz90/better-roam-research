@@ -201,6 +201,12 @@ div.roam-article {
 .bp3-dialog {
   background: var(--popup-background-color) !important;
 }
+.bp3-elevation-3 {
+  // Selection in the menus
+  div.dont-unfocus-block[style*="background"] {
+    background: var(--secondary-background-color) !important;
+  }
+}
 
 .rm-title-untitled,
 #block-input-ghost > span,
@@ -307,6 +313,9 @@ span.checkmark {
   > ul > div {
     color: #182026 !important;
   }
+}
+.DayPicker {
+  color: #182026 !important;
 }
 
 .rm-block-ref {
@@ -457,7 +466,7 @@ span.checkmark {
     --page-background-color: hsl(0, 0%, 8%);
     --main-area-background-color: hsl(0, 0%, 12%);
     --secondary-background-color: hsl(0, 0%, 18%);
-    --popup-background-color: hsl(0, 0%, 14%);
+    --popup-background-color: hsl(0, 0%, 4%);
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%);
   }
