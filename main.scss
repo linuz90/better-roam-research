@@ -279,7 +279,7 @@ span.checkmark {
   background: none !important;
   .kanban-column {
     border-radius: 6px !important;
-    &[style=""] {
+    &:not([style*="background"]) {
       background: var(--secondary-background-color) !important;
     }
     .kanban-title {
