@@ -221,9 +221,6 @@ span.checkmark {
 .bp3-popover-content > ul > div {
   color: #182026 !important; }
 
-.rm-embed-container {
-  background-color: #21282c !important; }
-
 .rm-block-ref {
   border-bottom: 0.5px solid var(--border-color) !important; }
   .rm-block-ref:hover {
@@ -344,4 +341,7 @@ span.checkmark {
     background-color: #5a5016 !important; }
 
   .bp3-overlay-backdrop {
-    background-color: rgba(0, 0, 0, 0.7) !important; } }
+    background-color: rgba(0, 0, 0, 0.7) !important; }
+
+  .rm-embed-container {
+    background-color: #2b3033 !important; } }

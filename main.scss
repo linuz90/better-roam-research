@@ -276,10 +276,6 @@ span.checkmark {
   }
 }
 
-.rm-embed-container {
-  background-color: #21282c !important;
-}
-
 .rm-block-ref {
   &:hover {
     background: var(--ref-hover-bg-color) !important;
@@ -447,5 +443,8 @@ span.checkmark {
   }
   .bp3-overlay-backdrop {
     background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+  .rm-embed-container {
+    background-color: #2b3033 !important;
   }
 }
