@@ -40,8 +40,8 @@ When Dark Mode is enabled on your computer:
 
 To create this theme I'm using the **SCSS** syntax. This file is compiled into a regular **CSS** file used for the theme.
 
-To edit the theme, install [Ruby Sass](https://github.com/sass/ruby-sass) (it's not maintained anymore, will use something else in the future).
+To edit the theme, [install Sass here](https://sass-lang.com/install).
 
-Then compile the SASS using this command:
+Then compile the SASS running this command in the project folder:
 
-`sass --sourcemap=none --no-cache --watch ./main.scss:./main.css`
+`sass main.scss:main.css --no-source-map --watch`
