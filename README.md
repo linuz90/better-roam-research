@@ -36,6 +36,14 @@ When Dark Mode is enabled on your computer:
 
 ![](/assets/preview-dark.png)
 
+This theme improves many areas of Roam, like the Kanban:
+
+![](/assets/kanban.png)
+
+Here it is without the theme, for reference:
+
+![](/assets/kanban-original.png)
+
 # Editing this theme
 
 To create this theme I'm using the **SCSS** syntax. This file is compiled into a regular **CSS** file used for the theme.
