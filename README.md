@@ -18,7 +18,7 @@ If you’re a screenwriter, try my new [Roam Screenwriter](https://github.com/li
 
 3. Create a child **code block** inside it (you can write three backticks to create it: ```) and change it to **css**
 
-4. Paste this in the code block `@import url("https://linuz90.github.io/better-roam-research/src/css/main.css");`
+4. Paste this in the code block `@import url("https://linuz90.github.io/better-roam-research/main.css");`
 
 It will look like this:
 
