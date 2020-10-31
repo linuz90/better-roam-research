@@ -106,11 +106,12 @@ body,
 }
 
 .rm-title-display,
-.rm-title-textarea {
+.rm-title-textarea,
+.roam-log-page h1.level2 {
   height: auto !important;
   line-height: 1.5 !important;
   font-size: 26px !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .rm-level1 {
@@ -120,7 +121,7 @@ body,
 .rm-level1 textarea {
   font-size: 22px !important;
   line-height: 1.5 !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .rm-level2 {
@@ -371,6 +372,10 @@ span.checkmark {
 .roam-sidebar-content .rm-db-title {
   margin-top: 0 !important;
   color: var(--font-color-lighter) !important;
+}
+
+#roam-right-sidebar-content .sidebar-content > div > div[style*=border-bottom] {
+  border-bottom: 1px solid var(--subtle-border-color) !important;
 }
 
 .starred-pages-wrapper > div:first-child {
