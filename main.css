@@ -36,7 +36,8 @@ body,
   background: var(--page-background-color) !important;
 }
 
-.roam-center {
+.roam-center,
+.roam-body-main {
   border-left: 1px solid var(--subtle-border-color) !important;
   border-top: 1px solid var(--subtle-border-color) !important;
   border-right: 1px solid var(--subtle-border-color) !important;
@@ -44,26 +45,29 @@ body,
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
   overflow: visible !important;
   background: var(--main-area-background-color) !important;
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 @media (max-width: 640px) {
-  .roam-center {
+  .roam-center,
+.roam-body-main {
     margin-right: 6px;
     margin-left: 6px;
   }
 }
-
-.roam-center .roam-article {
-  padding: 16px 36px 120px !important;
+.roam-center .roam-article,
+.roam-body-main .roam-article {
+  padding: 16px 32px 120px !important;
 }
 @media (max-width: 860px) {
-  .roam-center .roam-article {
+  .roam-center .roam-article,
+.roam-body-main .roam-article {
     padding: 12px 28px 120px !important;
   }
 }
 @media (max-width: 640px) {
-  .roam-center .roam-article {
+  .roam-center .roam-article,
+.roam-body-main .roam-article {
     padding: 10px 20px 120px !important;
   }
 }
@@ -111,6 +115,9 @@ body,
 #right-sidebar .hoverparent img,
 #right-sidebar .react-resizable img {
   max-width: 100% !important;
+}
+#right-sidebar .rm-block-text {
+  font-size: 14.5px !important;
 }
 
 .rm-title-display,
