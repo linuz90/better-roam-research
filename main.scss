@@ -36,17 +36,6 @@ body,
   background: var(--page-background-color) !important;
 }
 
-body {
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-#app {
-  flex: 1 !important;
-  display: flex !important;
-  flex-direction: column !important;
-}
-
 .roam-center,
 .roam-body-main {
   border-left: 1px solid var(--subtle-border-color) !important;
