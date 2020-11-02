@@ -36,14 +36,24 @@ body,
   background: var(--page-background-color) !important;
 }
 
+body {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#app {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
 .roam-center,
 .roam-body-main {
   border-left: 1px solid var(--subtle-border-color) !important;
   border-top: 1px solid var(--subtle-border-color) !important;
   border-right: 1px solid var(--subtle-border-color) !important;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03) !important;
-  overflow: visible !important;
   background: var(--main-area-background-color) !important;
   margin-right: 8px;
   margin-left: 8px;
