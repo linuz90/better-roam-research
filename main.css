@@ -1,8 +1,9 @@
 :root {
   --font-size: 15.5px;
-  --font-color: hsl(205, 23%, 16%);
-  --font-color-lighter: hsl(0, 0%, 40%);
-  --font-color-placeholder: hsl(0, 0%, 70%);
+  --c1: hsl(205, 23%, 16%);
+  --c2: hsl(0, 0%, 40%);
+  --c3: hsl(206, 15%, 60%);
+  --c4: hsl(0, 0%, 70%);
   --link-color: hsl(203, 82%, 35%);
   --selection-color: hsl(203, 100%, 74%);
   --ref-hover-bg-color: hsl(204, 33%, 97%);
@@ -23,7 +24,7 @@ body,
 .roam-body,
 .roam-app,
 .rm-pages-title-text {
-  color: var(--font-color) !important;
+  color: var(--c1) !important;
 }
 
 .roam-app > div:only-child:not(.roam-sidebar-container) {
@@ -31,7 +32,7 @@ body,
 }
 
 .bp3-button:not(.bp3-intent-primary) {
-  color: var(--font-color-lighter) !important;
+  color: var(--c2) !important;
 }
 
 html,
@@ -166,7 +167,7 @@ body,
 }
 
 h1 {
-  color: var(--font-color) !important;
+  color: var(--c1) !important;
 }
 
 div.roam-article span > a.rm-alias-external:after {
@@ -198,6 +199,15 @@ div.roam-article .rm-level3 span > a.rm-alias-external:after {
   height: 16px;
 }
 
+.rm-inline-references {
+  background-color: var(--secondary-background-color) !important;
+  border-left-color: var(--c3) !important;
+}
+
+.block-ref-count-button.rm-active {
+  background-color: var(--secondary-background-color) !important;
+}
+
 .block-highlight-blue {
   background-color: var(--selection-color) !important;
 }
@@ -211,11 +221,11 @@ div.roam-article .rm-level3 span > a.rm-alias-external:after {
 }
 
 .bp3-input {
-  color: var(--font-color) !important;
+  color: var(--c1) !important;
   background: var(--main-area-background-color) !important;
 }
 .bp3-input::placeholder {
-  color: var(--font-color-placeholder) !important;
+  color: var(--c4) !important;
 }
 
 .bp3-elevation-3,
@@ -229,7 +239,7 @@ div.roam-article .rm-level3 span > a.rm-alias-external:after {
 }
 
 .bp3-dialog h2.level2 {
-  color: var(--font-color) !important;
+  color: var(--c1) !important;
 }
 
 .rm-title-untitled,
@@ -364,14 +374,14 @@ span.checkmark {
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
   background-color: transparent !important;
-  color: var(--font-color) !important;
+  color: var(--c1) !important;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
 .bp3-minimal > div {
-  color: var(--font-color-lighter) !important;
+  color: var(--c2) !important;
   font-size: 13px !important;
 }
 
@@ -389,7 +399,7 @@ span.checkmark {
 }
 .roam-sidebar-content .rm-db-title {
   margin-top: 0 !important;
-  color: var(--font-color-lighter) !important;
+  color: var(--c2) !important;
 }
 
 #roam-right-sidebar-content .sidebar-content > div > div[style*=border-bottom] {
@@ -461,14 +471,15 @@ span.checkmark {
   line-height: 1.4;
   padding: 7px;
   opacity: 0.6;
-  color: var(--font-color-lighter);
+  color: var(--c2);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-color: hsl(205, 0%, 98%);
-    --font-color-lighter: hsl(0, 0%, 50%);
-    --font-color-placeholder: hsl(0, 0%, 36%);
+    --c1: hsl(205, 0%, 98%);
+    --c2: hsl(0, 0%, 50%);
+    --c3: hsl(206, 15%, 40%);
+    --c4: hsl(0, 0%, 36%);
     --link-color: hsl(203, 62%, 55%);
     --selection-color: hsl(203, 56%, 36%);
     --reference-item-background: hsl(0, 0%, 8%);
