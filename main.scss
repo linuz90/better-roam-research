@@ -26,6 +26,11 @@ body,
   color: var(--font-color) !important;
 }
 
+// Remove main area left margin when there's no sidebar (public pages)
+.roam-app > div:only-child:not(.roam-sidebar-container) {
+  margin-left: 0 !important;
+}
+
 .bp3-button:not(.bp3-intent-primary) {
   color: var(--font-color-lighter) !important;
 }
@@ -218,6 +223,9 @@ div.roam-article {
   div.dont-unfocus-block[style*="background"] {
     background: var(--secondary-background-color) !important;
   }
+}
+.bp3-dialog h2.level2 {
+  color: var(--font-color) !important;
 }
 
 .rm-title-untitled,
@@ -500,7 +508,7 @@ span.checkmark {
     --main-area-background-color: hsl(0, 0%, 12%);
     --cards-background-color: hsl(0, 0%, 20%);
     --secondary-background-color: hsl(0, 0%, 15%);
-    --popup-background-color: hsl(0, 0%, 4%);
+    --popup-background-color: hsl(0, 0%, 10%);
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%);
   }
