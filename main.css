@@ -13,7 +13,7 @@
   --page-background-color: hsl(210, 9%, 98%);
   --main-area-background-color: #ffffff;
   --cards-background-color: #ffffff;
-  --secondary-background-color: hsl(210, 9%, 95%);
+  --secondary-background-color: hsl(210, 14%, 96%);
   --popup-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
   --brackets-color: rgba(0, 0, 0, 0.25);
@@ -202,10 +202,20 @@ div.roam-article .rm-level3 span > a.rm-alias-external:after {
 .rm-inline-references {
   background-color: var(--secondary-background-color) !important;
   border-left-color: var(--c3) !important;
+  border-left-width: 3px !important;
+  border-radius: 3px !important;
 }
 
 .block-ref-count-button.rm-active {
   background-color: var(--secondary-background-color) !important;
+}
+
+.rm-bq {
+  background-color: var(--secondary-background-color) !important;
+  border-left-color: var(--c3) !important;
+  border-left-width: 3px !important;
+  border-radius: 3px !important;
+  padding: 8px 14px !important;
 }
 
 .block-highlight-blue {
