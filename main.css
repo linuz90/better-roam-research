@@ -464,6 +464,13 @@ span.checkmark {
   color: gray !important;
 }
 
+.rm-search-path-results {
+  background-color: var(--popup-background-color) !important;
+}
+.rm-search-path-results li {
+  color: var(--c1) !important;
+}
+
 #rm-mobile-bar {
   background-color: var(--main-area-background-color) !important;
 }

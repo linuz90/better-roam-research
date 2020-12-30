@@ -497,6 +497,13 @@ span.checkmark {
   }
 }
 
+.rm-search-path-results {
+  background-color: var(--popup-background-color) !important;
+  li {
+    color: var(--c1) !important;
+  }
+}
+
 // Mobile bar
 
 #rm-mobile-bar {
