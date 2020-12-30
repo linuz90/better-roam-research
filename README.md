@@ -26,6 +26,12 @@ It will look like this:
 
 The theme will change when I push updates in this repo ⚡️
 
+# Change Accent Color
+
+Just add an extra CSS block and change the `--accent-color` root variable to customize the theme accent color.
+
+![](/assets/accent.gif)
+
 # Preview
 
 Light:
