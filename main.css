@@ -4,7 +4,7 @@
   --c2: hsl(0, 0%, 40%);
   --c3: hsl(206, 15%, 60%);
   --c4: hsl(0, 0%, 70%);
-  --link-color: hsl(203, 82%, 35%);
+  --accent-color: hsl(203, 74%, 42%);
   --selection-color: hsl(203, 100%, 74%);
   --ref-hover-bg-color: hsl(204, 33%, 97%);
   --border-color: rgba(0, 0, 0, 0.12);
@@ -225,7 +225,7 @@ div.roam-article .rm-level3 span > a.rm-alias-external:after {
 .rm-page-ref-link-color,
 .rm-page-ref--link,
 .rm-ref-page-view-title > a {
-  color: var(--link-color) !important;
+  color: var(--accent-color) !important;
 }
 
 .rm-page-ref-brackets {
@@ -550,7 +550,6 @@ span.checkmark {
     --c2: hsl(0, 0%, 50%);
     --c3: hsl(206, 15%, 40%);
     --c4: hsl(0, 0%, 36%);
-    --link-color: hsl(203, 62%, 55%);
     --selection-color: hsl(203, 56%, 36%);
     --reference-item-background: hsl(0, 0%, 8%);
     --ref-hover-bg-color: hsl(204, 20%, 17%);
