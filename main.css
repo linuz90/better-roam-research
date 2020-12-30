@@ -506,7 +506,7 @@ span.checkmark {
     --empty-text-color: hsl(203, 5%, 70%);
   }
 
-  .roam-highlight,
+  .rm-highlight,
 .block-highlight-yellow {
     background-color: #5a5016 !important;
   }
