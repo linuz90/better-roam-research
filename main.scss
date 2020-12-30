@@ -225,7 +225,9 @@ div.roam-article {
   background-color: var(--selection-color) !important;
 }
 
-.rm-page-ref-link-color {
+.rm-page-ref-link-color,
+.rm-page-ref--link,
+.rm-ref-page-view-title > a {
   color: var(--link-color) !important;
 }
 
@@ -497,11 +499,56 @@ span.checkmark {
   }
 }
 
+// Popups
+
+.bp3-menu,
+.bp3-popover .bp3-popover-content {
+  background-color: var(--popup-background-color) !important;
+}
+
+.bp3-popover .bp3-popover-arrow-fill {
+  fill: var(--popup-background-color) !important;
+}
+
+.bp3-menu,
+.bp3-popover,
+.bp3-popover-content,
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a {
+  color: var(--c1) !important;
+  div > div > .flex-h-box div > div > span,
+  div > div > .flex-h-box div > div > strong,
+  div > div > div > button,
+  > ul > div {
+    color: var(--c1) !important;
+  }
+}
+
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
+  color: var(--c2) !important;
+}
+
 .rm-search-path-results {
   background-color: var(--popup-background-color) !important;
   li {
     color: var(--c1) !important;
   }
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown {
+  box-shadow: none !important;
+}
+
+// Remove background from settings button in user dropdown
+
+.bp3-menu-item.setting {
+  background: none !important;
+}
+
+// Hover states
+
+.rm-menu-item[style*="background-color"],
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting:hover {
+  background-color: var(--secondary-background-color) !important;
 }
 
 // Mobile bar
@@ -543,8 +590,8 @@ span.checkmark {
     --page-background-color: hsl(0, 0%, 8%);
     --main-area-background-color: hsl(0, 0%, 12%);
     --cards-background-color: hsl(0, 0%, 20%);
-    --secondary-background-color: hsl(0, 0%, 15%);
-    --popup-background-color: hsl(0, 0%, 10%);
+    --secondary-background-color: hsl(0, 0%, 13%);
+    --popup-background-color: hsl(0, 0%, 16%);
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%);
   }
