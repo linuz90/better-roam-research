@@ -211,6 +211,21 @@ div.roam-article {
   background-color: var(--secondary-background-color) !important;
 }
 
+// Inline parentheticals
+
+.rm-paren {
+  color: var(--c1) !important;
+  background-color: var(--secondary-background-color) !important;
+  border: 1px solid var(--subtle-border-color) !important;
+}
+
+.rm-paren--closed {
+  color: var(--c1) !important;
+  path {
+    fill: var(--c1) !important;
+  }
+}
+
 // Block quotes
 .rm-bq {
   background-color: var(--secondary-background-color) !important;
@@ -589,7 +604,7 @@ span.checkmark {
     --page-background-color: hsl(0, 0%, 8%);
     --main-area-background-color: hsl(0, 0%, 12%);
     --cards-background-color: hsl(0, 0%, 20%);
-    --secondary-background-color: hsl(0, 0%, 13%);
+    --secondary-background-color: hsl(0, 0%, 18%);
     --popup-background-color: hsl(0, 0%, 16%);
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%);
