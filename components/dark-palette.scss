@@ -1,0 +1,39 @@
+:root {
+  --c1: hsl(205, 0%, 98%);
+  --c2: hsl(0, 0%, 50%);
+  --c3: hsl(206, 15%, 40%);
+  --c4: hsl(0, 0%, 36%);
+  --selection-color: hsl(203, 56%, 36%);
+  --reference-item-background: hsl(0, 0%, 8%);
+  --ref-hover-bg-color: hsl(204, 20%, 17%);
+  --border-color: rgba(255, 255, 255, 0.25);
+  --subtle-border-color: rgba(255, 255, 255, 0.07);
+  --search-border-color: rgba(255, 255, 255, 0.06);
+  --page-background-color: hsl(0, 0%, 8%);
+  --main-area-background-color: hsl(0, 0%, 12%);
+  --cards-background-color: hsl(0, 0%, 20%);
+  --secondary-background-color: hsl(0, 0%, 18%);
+  --popup-background-color: hsl(0, 0%, 16%);
+  --brackets-color: rgba(255, 255, 255, 0.3);
+  --empty-text-color: hsl(203, 5%, 70%);
+}
+img,
+div#buffer,
+.bp3-portal,
+.intercom-app,
+.loading-astrolabe,
+.bp3-dialog,
+.twitter-tweet,
+iframe {
+  // filter: invert(1) hue-rotate(180deg) !important;
+}
+.rm-highlight,
+.block-highlight-yellow {
+  background-color: hsl(51, 60%, 22%) !important;
+}
+.bp3-overlay-backdrop {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.rm-embed-container {
+  background-color: #2b3033 !important;
+}

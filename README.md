@@ -20,6 +20,8 @@ If you’re a screenwriter, try my new [Roam Screenwriter](https://github.com/li
 
 4. Paste this in the code block `@import url("https://linuz90.github.io/better-roam-research/main.css");`
 
+**NEW:** If you want to force light or dark mode, use `light.css` or `dark.css` respectively instead of `main.css` (which uses system detection instead).
+
 It will look like this:
 
 ![](/assets/how-to.png)
@@ -52,10 +54,16 @@ Here it is without the theme, for reference:
 
 # Editing this theme
 
-To create this theme I'm using the **SCSS** syntax. This file is compiled into a regular **CSS** file used for the theme.
+To create this theme I'm using the **SCSS** syntax. `.scss` files are compiled into regular **CSS** files used for the theme.
 
 To edit the theme, [install Sass here](https://sass-lang.com/install).
 
-Then compile the SASS running this command in the project folder:
+Then compile the files running this command in the project folder:
 
-`sass main.scss:main.css --no-source-map --watch`
+`sass .:. --no-source-map --watch`
+
+The `main.scss` file imports the main components of the theme, using the dark mode based on the system preference.
+
+The `light.scss` and `dark.scss` files instead only import the respective palettes.
+
+The theme styling itself is in `components/style.scss`, the most important file.

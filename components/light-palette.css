@@ -1,0 +1,21 @@
+:root {
+  --font-size: 15.5px;
+  --c1: hsl(205, 23%, 16%);
+  --c2: hsl(0, 0%, 40%);
+  --c3: hsl(206, 15%, 60%);
+  --c4: hsl(0, 0%, 70%);
+  --accent-color: hsl(203, 74%, 42%);
+  --selection-color: hsl(203, 100%, 74%);
+  --ref-hover-bg-color: hsl(204, 33%, 97%);
+  --border-color: rgba(0, 0, 0, 0.12);
+  --subtle-border-color: rgba(0, 0, 0, 0.07);
+  --search-border-color: rgba(0, 0, 0, 0.07);
+  --page-background-color: hsl(210, 9%, 98%);
+  --main-area-background-color: #ffffff;
+  --cards-background-color: #ffffff;
+  --secondary-background-color: hsl(210, 14%, 96%);
+  --popup-background-color: #ffffff;
+  --reference-item-background: hsl(0, 0%, 99%);
+  --brackets-color: rgba(0, 0, 0, 0.25);
+  --empty-text-color: hsl(203, 12%, 75%);
+}
