@@ -8,8 +8,6 @@ This is one of the most popular **minimal themes** for [Roam Research](https://r
 
 🔥 Want to contribute? **[Edit the theme](#editing-this-theme).**
 
-If you’re a screenwriter, try my new [Roam Screenwriter](https://github.com/linuz90/roam-screenwriter) theme.
-
 # How to use
 
 1. Inside Roam Research, create a page named exactly `roam/css`
