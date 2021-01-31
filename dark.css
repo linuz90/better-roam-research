@@ -3,6 +3,7 @@
   --c2: hsl(0, 0%, 50%);
   --c3: hsl(206, 15%, 40%);
   --c4: hsl(0, 0%, 36%);
+  --c5: hsl(0, 0%, 24%);
   --selection-color: hsl(203, 56%, 36%);
   --reference-item-background: hsl(0, 0%, 8%);
   --ref-hover-bg-color: hsl(204, 20%, 17%);
@@ -166,9 +167,11 @@ body,
 
 .rm-heading-level-3 > .rm-block-main span {
   margin-top: -1px !important;
+  color: var(--c2) !important;
 }
 .rm-heading-level-3 > .rm-block-main div,
 .rm-heading-level-3 > .rm-block-main textarea {
+  color: var(--c2) !important;
   font-size: 18px !important;
   line-height: 1.5 !important;
 }
@@ -266,7 +269,7 @@ div.roam-article .rm-level3 span > a.rm-alias--external:after {
 }
 
 .bp3-input {
-  color: var(--c1) !important;
+  color: var(--c4) !important;
   background: var(--main-area-background-color) !important;
 }
 .bp3-input::placeholder {
@@ -299,8 +302,7 @@ textarea::placeholder {
 
 body,
 div,
-textarea,
-.level2 {
+textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
@@ -491,8 +493,11 @@ span.checkmark {
   margin-top: 4px !important;
 }
 
-.block-border-left {
-  border-left-color: var(--subtle-border-color) !important;
+.rm-multibar {
+  border-right-color: var(--c5) !important;
+}
+.rm-multibar:hover {
+  border-right-color: var(--c4) !important;
 }
 
 .rm-reference-main div > strong {

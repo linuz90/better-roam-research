@@ -1,9 +1,10 @@
 :root {
   --font-size: 15.5px;
-  --c1: hsl(205, 23%, 16%);
-  --c2: hsl(0, 0%, 40%);
-  --c3: hsl(206, 15%, 60%);
-  --c4: hsl(0, 0%, 70%);
+  --c1: hsl(206, 10%, 16%);
+  --c2: hsl(206, 12%, 40%);
+  --c3: hsl(206, 16%, 60%);
+  --c4: hsl(206, 18%, 70%);
+  --c5: hsl(206, 20%, 87%);
   --accent-color: hsl(203, 74%, 42%);
   --selection-color: hsl(203, 100%, 74%);
   --ref-hover-bg-color: hsl(204, 33%, 97%);
@@ -155,9 +156,11 @@ body,
 
 .rm-heading-level-3 > .rm-block-main span {
   margin-top: -1px !important;
+  color: var(--c2) !important;
 }
 .rm-heading-level-3 > .rm-block-main div,
 .rm-heading-level-3 > .rm-block-main textarea {
+  color: var(--c2) !important;
   font-size: 18px !important;
   line-height: 1.5 !important;
 }
@@ -255,7 +258,7 @@ div.roam-article .rm-level3 span > a.rm-alias--external:after {
 }
 
 .bp3-input {
-  color: var(--c1) !important;
+  color: var(--c4) !important;
   background: var(--main-area-background-color) !important;
 }
 .bp3-input::placeholder {
@@ -288,8 +291,7 @@ textarea::placeholder {
 
 body,
 div,
-textarea,
-.level2 {
+textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
@@ -480,8 +482,11 @@ span.checkmark {
   margin-top: 4px !important;
 }
 
-.block-border-left {
-  border-left-color: var(--subtle-border-color) !important;
+.rm-multibar {
+  border-right-color: var(--c5) !important;
+}
+.rm-multibar:hover {
+  border-right-color: var(--c4) !important;
 }
 
 .rm-reference-main div > strong {
