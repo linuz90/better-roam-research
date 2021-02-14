@@ -182,6 +182,9 @@ body,
   font-weight: 600 !important;
 }
 
+.rm-heading-level-2 > .rm-block-main .version-bullet {
+  margin-top: 8px !important;
+}
 .rm-heading-level-2 > .rm-block-main span {
   margin-top: -2px !important;
 }
@@ -192,6 +195,9 @@ body,
   font-weight: 600 !important;
 }
 
+.rm-heading-level-3 > .rm-block-main .version-bullet {
+  margin-top: 8px !important;
+}
 .rm-heading-level-3 > .rm-block-main span {
   margin-top: -1px !important;
   color: var(--c2) !important;
