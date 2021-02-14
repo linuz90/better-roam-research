@@ -102,6 +102,9 @@ body,
 }
 
 .rm-heading-level-1 > .rm-block-main {
+  .version-bullet {
+    margin-top: 8px !important;
+  }
   span {
     margin-top: -2px !important;
   }
