@@ -28,6 +28,7 @@
     --c3: hsl(206, 15%, 40%);
     --c4: hsl(0, 0%, 36%);
     --c5: hsl(0, 0%, 24%);
+    --accent-color: hsl(203, 74%, 42%);
     --selection-color: hsl(203, 56%, 36%);
     --reference-item-background: hsl(0, 0%, 8%);
     --ref-hover-bg-color: hsl(204, 20%, 17%);
@@ -169,6 +170,9 @@ body,
   font-weight: 600 !important;
 }
 
+.rm-heading-level-1 > .rm-block-main .version-bullet {
+  margin-top: 8px !important;
+}
 .rm-heading-level-1 > .rm-block-main span {
   margin-top: -2px !important;
 }
@@ -179,6 +183,9 @@ body,
   font-weight: 600 !important;
 }
 
+.rm-heading-level-2 > .rm-block-main .version-bullet {
+  margin-top: 8px !important;
+}
 .rm-heading-level-2 > .rm-block-main span {
   margin-top: -2px !important;
 }
@@ -189,6 +196,9 @@ body,
   font-weight: 600 !important;
 }
 
+.rm-heading-level-3 > .rm-block-main .version-bullet {
+  margin-top: 8px !important;
+}
 .rm-heading-level-3 > .rm-block-main span {
   margin-top: -1px !important;
   color: var(--c2) !important;
