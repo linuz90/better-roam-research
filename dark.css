@@ -111,6 +111,18 @@ body,
   border-radius: 8px !important;
 }
 
+.rm-query {
+  border: 1px solid var(--subtle-border-color);
+  border-radius: 6px;
+}
+
+.rm-query .rm-query-title {
+  background-color: var(--secondary-background-color);
+  color: var(--c1);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
 #right-sidebar {
   border: none !important;
   transition: none !important;
