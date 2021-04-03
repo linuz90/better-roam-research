@@ -513,7 +513,6 @@ span.checkmark {
 }
 
 .rm-block-text {
-  max-width: 660px !important;
   font-size: var(--font-size) !important;
 }
 
