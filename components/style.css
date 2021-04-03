@@ -247,6 +247,7 @@ div.roam-article .rm-level3 span > a.rm-alias--external:after {
 .rm-page-ref-link-color,
 .rm-page-ref--link,
 .rm-ref-page-view-title > a,
+.rm-alias,
 .rm-alias--external {
   color: var(--accent-color) !important;
 }
