@@ -39,3 +39,24 @@ iframe {
 .rm-embed-container {
   background-color: #2b3033 !important;
 }
+
+// Roam42 autocomplete menus
+.tribute-container {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+
+  ul {
+    margin: 0;
+    background: #121212;
+    border-radius: 2px;
+    overflow: hidden;
+
+    li {
+      padding: 6px 12px;
+      cursor: pointer;
+
+      &.highlight {
+        background: #000;
+      }
+    }
+  }
+}
