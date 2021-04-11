@@ -33,6 +33,23 @@
   background-color: #2b3033 !important;
 }
 
+.tribute-container {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.tribute-container ul {
+  margin: 0;
+  background: #121212;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.tribute-container ul li {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.tribute-container ul li.highlight {
+  background: #000;
+}
+
 body,
 .roam-body,
 .roam-app,
