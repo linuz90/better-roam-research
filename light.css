@@ -316,7 +316,9 @@ textarea::placeholder {
 body,
 div,
 textarea,
-.level2 {
+.level2,
+.rm-level2,
+.rm-heading-level-2 > .rm-block__self .rm-block__input {
   font-family: var(--font-family) !important;
   font-variation-settings: var(--font-variation-settings);
 }
