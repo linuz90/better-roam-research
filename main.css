@@ -43,20 +43,17 @@
     --brackets-color: rgba(255, 255, 255, 0.3);
     --empty-text-color: hsl(203, 5%, 70%);
   }
-
   .rm-highlight,
-.block-highlight-yellow {
-    background-color: #5a5016 !important;
+  .block-highlight-yellow {
+    color: #f2f2f2 !important;
+    background-color: hsl(51, 60%, 22%) !important;
   }
-
   .bp3-overlay-backdrop {
     background-color: rgba(0, 0, 0, 0.7) !important;
   }
-
   .rm-embed-container {
     background-color: #2b3033 !important;
   }
-
   .tribute-container {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   }
@@ -108,7 +105,7 @@ body,
 }
 @media (max-width: 640px) {
   .roam-center,
-.roam-body-main {
+  .roam-body-main {
     margin-right: 6px;
     margin-left: 6px;
   }
@@ -119,13 +116,13 @@ body,
 }
 @media (max-width: 860px) {
   .roam-center .roam-article,
-.roam-body-main .roam-article {
+  .roam-body-main .roam-article {
     padding: 12px 28px 120px !important;
   }
 }
 @media (max-width: 640px) {
   .roam-center .roam-article,
-.roam-body-main .roam-article {
+  .roam-body-main .roam-article {
     padding: 10px 20px 120px !important;
   }
 }
@@ -562,7 +559,7 @@ span.checkmark {
 }
 
 .rm-reference-main div > strong {
-  color: gray !important;
+  color: hsl(0, 0%, 50%) !important;
 }
 
 .bp3-menu,
