@@ -55,7 +55,7 @@ body,
 }
 @media (max-width: 640px) {
   .roam-center,
-.roam-body-main {
+  .roam-body-main {
     margin-right: 6px;
     margin-left: 6px;
   }
@@ -66,13 +66,13 @@ body,
 }
 @media (max-width: 860px) {
   .roam-center .roam-article,
-.roam-body-main .roam-article {
+  .roam-body-main .roam-article {
     padding: 12px 28px 120px !important;
   }
 }
 @media (max-width: 640px) {
   .roam-center .roam-article,
-.roam-body-main .roam-article {
+  .roam-body-main .roam-article {
     padding: 10px 20px 120px !important;
   }
 }
@@ -192,43 +192,6 @@ body,
 
 h1 {
   color: var(--c1) !important;
-}
-
-div.roam-article span > a.rm-alias--external:after {
-  content: "";
-  display: inline-block;
-  object-fit: cover;
-  mask-image: url("https://better-roam-research.s3.us-east-1.amazonaws.com/assets/link-glyph-mask.png");
-  -webkit-mask-box-image: url("https://better-roam-research.s3.us-east-1.amazonaws.com/assets/link-glyph-mask.png");
-  mask-mode: alpha;
-  mask-size: 14px 14px;
-  -webkit-mask-box-size: 14px 14px;
-  mask-repeat: no-repeat;
-  -webkit-mask-box-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-box-position: center;
-  background-color: var(--accent-color);
-  width: 14px;
-  height: 14px;
-  margin: 0 1px 0 5px;
-  position: relative;
-  bottom: -2px;
-  left: -1px;
-}
-div.roam-article .rm-level1 span > a.rm-alias--external:after {
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-}
-div.roam-article .rm-level2 span > a.rm-alias--external:after {
-  background-size: 18px 18px;
-  width: 18px;
-  height: 18px;
-}
-div.roam-article .rm-level3 span > a.rm-alias--external:after {
-  background-size: 16px 16px;
-  width: 16px;
-  height: 16px;
 }
 
 .rm-inline-references {
@@ -509,7 +472,7 @@ span.checkmark {
 }
 
 .rm-reference-main div > strong {
-  color: gray !important;
+  color: hsl(0, 0%, 50%) !important;
 }
 
 .bp3-menu,
